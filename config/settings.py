@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #third-party
+    'rosetta',
+
     # local
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
