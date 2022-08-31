@@ -4,7 +4,7 @@ This is an Online Shop website created with Django
 
 ## Use RabbitMQ and Celery
 
-run rabbitmq
+### run rabbitmq
 
 ```docker
 docker run -d --hostname my-rabbit --name some-rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9.22-management-alpine
@@ -31,5 +31,5 @@ docker network create -d bridge redisnet
 ### run the redis container
 
 ```sh
-docker run -d -p 6379:6379  --name bookmark-redis --network redisnet redis:alpine
+docker run -d -p 6379:6379  --name ecommerce-redis --network redisnet redis:alpine
 ```
