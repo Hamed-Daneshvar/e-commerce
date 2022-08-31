@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     #third-party
     'rosetta',
+    'parler',
 
     # local
     'shop.apps.ShopConfig',
@@ -163,3 +164,15 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOCALE_PATHS = (
     (BASE_DIR / 'locale/'),
 )
+
+# parler setting
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
